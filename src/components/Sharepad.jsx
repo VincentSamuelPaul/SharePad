@@ -1,7 +1,11 @@
 import React from 'react';
 import '../sharepad.css';
 
-const Sharepad = () => {
+const Sharepad = ({ data }) => {
+
+    const data_ = localStorage.getItem("data");
+
+    console.log(data_.text);
 
     return (
         <div className='sharepad'>

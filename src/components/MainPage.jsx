@@ -4,15 +4,23 @@ import { useNavigate } from 'react-router-dom';
 import { readData } from '../Database';
 
 
-const MainPage = () => {
+const MainPage = ({ link, setLink, data, setData}) => {
 
     const navigate = useNavigate();
 
     const checkLink = async(link) => {
-        // console.log(link);
         const dat = await readData("links");
         const links = dat.docs.map(doc => doc.data());
-        
+        for(let i = 0; i < links.length; i++) {
+            if(link == links[i].uniqueLink) {
+                setData(links[i]);
+                if(data) {
+                    console.log(data);
+                    localStorage.setItem("data", JSON.stringify);
+                    navigate("/sharepad");
+                }
+            }
+        }
     }
 
     return (
@@ -24,9 +32,9 @@ const MainPage = () => {
             <div className='pageinput'>
                 <div className="pageinput-box">
                     <h2 className='input-text url'>sharepad.com/</h2>
-                    <input className='input-text'  placeholder='your-page'/>
+                    <input className='input-text' onChange={(e) => setLink(e.target.value)}  placeholder='your-page'/>
                 </div>
-                <button className='go-btn'>Go!</button>
+                <button className='go-btn' onClick={() => checkLink(link)}>Go!</button>
             </div>
             <div className="footer">
                 <h2 className='footer-title'>PBL 3rd Sem project CS-ICB by ~</h2>

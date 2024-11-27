@@ -4,7 +4,7 @@ import { setDoc, doc, addDoc, collection, getDocs, deleteDoc } from "firebase/fi
 export const writeData = async(database, data) => {
     try {
         const docRef = await addDoc(collection(db, database), data);
-        console.log(`Document ID: ${docRef.id}`);
+        return `Document ID: ${docRef.id}`;
     } catch(e) {
         console.log(`Error ${e}`);
     };
@@ -21,6 +21,8 @@ export const readData = async(database) => {
 
 export const updateData = async(database, id, data) => {
     await setDoc(doc(db, database, id), data);
+    // const docu = db.collection(database).doc(id);
+    // const res = await docu.update({});
 };
 
 export const deleteData = async(database, id) => {

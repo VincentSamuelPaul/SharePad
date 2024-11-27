@@ -133,3 +133,8 @@ body::before {
     font-size: 16px;
     margin-bottom: 20px;
 }
+
+.message {
+    margin-top: 10px;
+    color: rgb(255, 68, 0);
+}
