@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --twitterBlue: #1DA1F2;
+}
+
+body::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", serif;
+    color: white;
+}
+
+.hero {
+  margin-top: 10vh;
+}
+
+.title {
+    font-size: 112px;
+}
+
+.description {
+  font-size: 28px;
+}
+
+.pageinput {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.pageinput-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid 1px black;
+  border-radius: 8px;
+  margin-right: 8px;
+  background-color: white;
+}
+
+.input-text {
+    font-size: 20px;
+    padding: 12px;
+    /* border-left: solid 1px black; */
+    border-radius: 8px 0 0 8px;
+
+}
+
+.pageinput-box input, input:active {
+    border: none;
+    padding: 5px;
+    outline: none;
+    margin-left: 12px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.url {
+  border-right: solid 1px var(--twitterBlue);
+  font-weight: 500;
+  background-color: var(--twitterBlue);
+  color: white;
+}
+
+.go-btn {
+    padding: 15px;
+    border: solid 1px var(--twitterBlue);
+    border-radius: 8px;
+    margin-left: 12px;
+    font-size: 20px;
+    background-color: var(--twitterBlue);
+    font-weight: 500;
+    width: 80px;
+    cursor: pointer;
+    color: white;
+}
+
+.go-btn:hover {
+  padding: 14px;
+  /* width: 79px; */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+}
+
+.names {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 33vw;
+  margin-top: 20px;
+}
+
+.footer-title {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.name {
+  margin: 8px;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.copyright {
+  margin-top: 28px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}

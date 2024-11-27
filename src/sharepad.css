@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Playwrite+CU:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.sharepad {
+    color: white;
+    font-family: "Poppins", serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 32px;
+}
+
+.textarea {
+    width: 90vw;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 64px;
+}
+
+.text {
+    width: 82vw;
+    min-height: 75vh;
+    font-size: 20px;
+    border: solid 1px #1da0f283;
+    border-radius: 12px;
+    padding: 24px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    box-shadow: var(--twitterBlue) 0px 2px 24px;
+    outline: none;
+}
+
+.text:active, .text:focus {
+    box-shadow: var(--twitterBlue) 0px 4px 24px;
+}
+
+.btn {
+    margin-top: 36px;
+    padding: 15px;
+    border: solid 1px var(--twitterBlue);
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: var(--twitterBlue);
+    font-weight: 500;
+    width: 80px;
+    cursor: pointer;
+    color: white;
+}
+
+.users {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.users h1 {
+    font-size: 40px;
+    border-bottom: 5px solid var(--twitterBlue);
+}
+
+.usernames {
+    margin-top: 20px;
+}
+
+.usernames h3 {
+    margin-top: 4px;
+    font-weight: 500;
+}
