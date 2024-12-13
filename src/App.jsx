@@ -73,7 +73,7 @@ function App() {
             </div>
             <div className='pageinput'>
                 <div className="pageinput-box">
-                    <h2 className='input-text url'>sharepad.com/</h2>
+                    <h2 className='input-text url'>share-pad.netlify.app/</h2>
                     <input className='input-text' onChange={(e) => setLink(e.target.value)}  placeholder='your-page'/>
                 </div>
                 <button className='go-btn' onClick={() => checkLink(link)}>Go!</button>
