@@ -1,8 +1,8 @@
-# React + Vite
+<h1>SharePad</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h3>A fast, secure and easy to use text sharing site.</h3>
+<h3>Lets you share text using a unique id without login or signup.</h3>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h3>Built Using: </h3>
+<p>1. ReactJS</p>
+<p>2. Firebase</p>
