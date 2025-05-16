@@ -4,7 +4,7 @@ import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAqNANbDMFmgiajhxD7tfthIEIVAquGI_4",
+    apiKey: "AIzaSyAqNANbDMFmgiajhxD7tfthIEIVAquGI_44",
     authDomain: "fir-22eb6.firebaseapp.com",
     projectId: "fir-22eb6",
     storageBucket: "fir-22eb6.appspot.com",
